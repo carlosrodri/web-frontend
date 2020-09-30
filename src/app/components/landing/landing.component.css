@@ -1,0 +1,87 @@
+form {
+    border: solid;
+    border-color: gray;
+    border-radius: 2vh;
+    margin: 15vh;
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+    "title"
+    "name"
+    "mail"
+    "button";
+
+}
+
+small{
+    color: red;
+}
+
+.title {
+    font-size: 4vh;
+    grid-area: title;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.name {
+    grid-area: name;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+input:focus {
+    outline: none;
+}
+
+input{
+    height: 6vh;
+    margin: 2vh;
+    font-weight: normal;
+    color: gray;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3vh;
+    border-radius: 2vh;
+
+}
+
+.mail {
+    grid-area: mail;
+}
+.button {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: orange;
+    height: 10vh;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 2vh;
+    border: none;
+    text-align: center;
+    color: black;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 2vh;
+    margin-top: 0vh;
+    grid-area: button;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        grid-template-areas:
+            "title"
+            "name"
+            "mail"
+            "button";
+    }
+    .name{
+        margin: 2vh;
+    }
+
+    .mail{
+        margin: 2vh;
+    }
+
+    .button{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,79 @@
+.containers {
+    display: grid;
+    grid-template-areas: "desarrollo empren marketing production";
+    margin-bottom: 10vh;
+}
+
+.footer{
+    margin-top: 20vh;
+    background-color: #FABD4A;
+    border-radius: 3vh;
+}
+
+h2{
+    margin-left: 3vh;
+    margin-bottom: 8vh;
+    padding-top: 5vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+img{
+    margin-top: 2vh;
+    margin-left: 3vh;
+}
+
+p {
+    padding-left: 3vh;
+    font-family: 'Ubuntu', sans-serif;
+    padding-right: 3vh;
+    margin-top: 3vh;
+    font-weight: normal;
+}
+
+h3 {
+    padding-left: 3vh;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 2vh;
+}
+
+.desarrollo {
+    grid-area: desarrollo;
+    margin-left: 2vh;
+}
+
+.empren {
+    grid-area: empren;
+    margin-left: 2vh;
+}
+
+.marketing {
+    grid-area: marketing;
+    margin-left: 2vh;
+}
+
+.audiov {
+    grid-area: production;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+#squares {
+    background-color: white;
+    border-radius: 2vh;
+    margin-bottom: 5vh;
+}
+
+@media screen and (max-wiDth: 768px){
+    .containers{
+        grid-template-areas: "desarrollo"
+                             "empren"
+                             "marketing"
+                             "production";
+    }
+
+    #squares {
+        border-radius: 2vh;
+        margin: 2vh;
+    }
+
+}
