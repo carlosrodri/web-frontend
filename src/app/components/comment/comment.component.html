@@ -1,0 +1,7 @@
+<div class="container">
+    <h2>Deja tu comentario, es gratis</h2>
+    <input type="text" placeholder="Nombre" [(ngModel)]="comment.name">
+    <input type="email" placeholder="Correo" [(ngModel)]="comment.mail">
+    <textarea type="text" placeholder="Comentario" [(ngModel)]="comment.description"></textarea>
+    <button (click)="addComment()">¡Comentar!</button>
+</div>

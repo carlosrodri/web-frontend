@@ -1,3 +1,4 @@
+import { VisitService } from './../../services/visit.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -17,7 +18,9 @@ export class BodyComponent implements OnInit {
   github: string = 'https://github.com/carlosrodri'
   facebook: string = 'https://www.facebook.com/carlosalberto.rodriguezsanchez.71/'
 
-  constructor() { }
+  constructor(private visitService: VisitService) {
+    this.visitService.getDeviceInformation()
+  }
 
   ngOnInit() {
   }

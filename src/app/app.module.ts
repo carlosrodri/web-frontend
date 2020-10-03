@@ -1,5 +1,9 @@
+import { DeviceDetectorService } from 'ngx-device-detector';
+import { SubscriberService } from './services/subscriber.service';
+import { CommentService } from './services/comment.service';
+import { VisitService } from './services/visit.service';
+import { EndPointsService } from './services/end-points.service';
 import { ArticleService } from './services/article.service';
-import { Routes } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -20,6 +24,7 @@ import { BlogcardComponent } from './components/blogcard/blogcard.component';
 import { CardDetailsComponent } from './components/card-details/card-details.component';
 import { FormsModule } from  '@angular/forms'
 import { HttpClientModule } from "@angular/common/http";
+import { CommentComponent } from './components/comment/comment.component';
 
 @NgModule({
   declarations: [
@@ -33,10 +38,12 @@ import { HttpClientModule } from "@angular/common/http";
     BlogComponent,
     AboutComponent,
     ProjectsComponent,
+    CommentComponent,
     EmprenComponent,
     ContactComponent,
     BlogcardComponent,
-    CardDetailsComponent
+    CardDetailsComponent,
+    CommentComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +51,7 @@ import { HttpClientModule } from "@angular/common/http";
     HttpClientModule,
     FormsModule
   ],
-  providers: [ArticleService],
+  providers: [ArticleService, EndPointsService, VisitService, CommentService, SubscriberService, DeviceDetectorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

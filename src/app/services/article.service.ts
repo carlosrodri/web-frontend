@@ -1,3 +1,4 @@
+import { EndPointsService } from './end-points.service';
 import { Article } from './../models/article';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -9,21 +10,25 @@ import { map } from 'rxjs/operators';
 })
 export class ArticleService {
 
-url = 'http://localhost:3000/web/article/'
+  constructor(private http: HttpClient, private endPoint: EndPointsService) { }
 
-  constructor(private http: HttpClient) { }
-
-  getAllArticles(): Observable<Article[]>{
-    return this.http.get(this.url).pipe(
+  getAllArticles(): Observable<Article[]> {
+    return this.http.get(this.endPoint.ARTICLES_URL).pipe(
       map((res) => res as Article[])
     )
   }
 
-  getAllArticleById(id: string): Observable<Article>{
-    console.log('entra onea');
-    
-    return this.http.get(this.url+id).pipe(
+  getAllArticleById(id: string): Observable<Article> {
+    return this.http.get(this.endPoint.ARTICLES_URL + id).pipe(
       map((res) => res as Article)
     )
+  }
+
+  addArticle(article: Article) {
+    return this.http.post(this.endPoint.ARTICLES_URL, article)
+  }
+
+  addImageToArticle(id: string, article: Article) {
+    return this.http.put(this.endPoint.ARTICLES_URL+id, article)
   }
 }

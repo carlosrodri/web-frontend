@@ -1,7 +1,7 @@
 <form action="">
   <p class="title">{{title}}</p>
-  <input class="name" type="text" placeholder="Nombre" [(ngModel)]="landing.name" required name="names">
-  <input class="mail" type="email" placeholder="Correo electrónico" [(ngModel)]="landing.mail"
+  <input class="name" type="text" placeholder="Nombre" [(ngModel)]="subscriber.name" required name="names">
+  <input class="mail" type="email" placeholder="Correo electrónico" [(ngModel)]="subscriber.mail"
     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" #mailp='ngModel' required name="mails"
     [class.is-invalid]="mailp.invalid && mailp.touched">
   <div>
