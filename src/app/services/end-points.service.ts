@@ -11,7 +11,7 @@ export class EndPointsService {
   SUBSCRIBERS_URL = 'https://carlosrodr.herokuapp.com/web/suscribers/'
 
   constructor() {
-    this.proofEndPoints()
+    this.productionEnpoints()
   }
 
   productionEnpoints() {
