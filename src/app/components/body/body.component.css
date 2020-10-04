@@ -8,9 +8,22 @@
         " landing landing";
 }
 
+.responsive_icons {
+    display: none;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.responsive_icons li {
+    margin: 2vw;
+    margin-bottom: 0px;
+    width: 30px;
+    height: 30px;
+}
+
 .title {
     margin-top: 0vh;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     text-align: left;
     font-size: 6vh;
     color: black;
@@ -18,14 +31,15 @@
 }
 
 .description {
-    margin-left: 5%;
-    margin-right: 5%;
+    /* margin-left: 5%; */
+    /* margin-right: 5%; */
     text-align: left;
     font-size: 4vh;
+    grid-area: description;
 }
 
 .emotional {
-    margin-left: 5%;
+    /* margin-left: 5%; */
     font-size: 4vh;
     font-weight: bold;
     text-align: left;
@@ -33,7 +47,6 @@
 }
 
 .video {
-    margin-right: 4vh;
     grid-area: video;
 }
 
@@ -43,12 +56,12 @@
 }
 
 .landing {
-    margin-left: 5%;
+    /* margin-left: 5%; */
     grid-area: landing;
     margin-top: 3vh;
 }
 
-@media screen and (max-width: 948px) {
+@media only screen and (max-width: 948px) {
     .body {
         grid-template-areas:
             "landing"
@@ -62,11 +75,34 @@
     .title {
         font-size: 2rem;
     }
-    .description{
+    .description {
         font-size: 1rem;
     }
-    .emotional{
+    .emotional {
         font-size: 1.2rem;
+    }
+    img {
+        width: 340px;
+    }
+    .icons {
+        display: none;
+        margin-top: 3vh;
+        position: absolute;
+        list-style: none;
+        text-align: center;
+    }
+
+    .responsive_icons {
+        position: absolute;
+        display: flex;
+        text-align: center;
+        align-content: center;
+    }
+
+    .responsive_icons li {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
     }
 }
 span {
@@ -94,11 +130,14 @@ span {
     cursor: pointer;
     margin: 0 10px;
 }
-
+ul.icons {
+    margin: 0px;
+    padding: 0px;
+}
 .icons li:before {
     position: absolute;
     top: 0vh;
-    left: 0vh;
+    left: 0%;
     content: "";
     height: 12vh;
     width: 12vh;

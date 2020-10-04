@@ -3,7 +3,7 @@ header {
 }
 
 img {
-    margin-left: 2vh;
+    margin-left: 2vw;
 }
 .title {
     grid-area: title;
@@ -25,7 +25,7 @@ a {
     text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .btnMenu {
         display: flex;
         align-items: center;
@@ -94,7 +94,7 @@ header nav ul li a:hover {
     border-color: #ffbf45;
 }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     header nav {
         width: 80%;
         height: 100%;
@@ -141,7 +141,7 @@ header nav ul li a:hover {
     }
 }
 
-@media screen and (max-width: 1079px) {
+@media only screen and (max-width: 1079px) {
     .logo {
         font-size: 2rem;
     }

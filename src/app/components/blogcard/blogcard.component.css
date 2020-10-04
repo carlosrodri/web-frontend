@@ -34,7 +34,7 @@ h2 {
     grid-area: date;
 }
 
-@media screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
     .container{
         background-color: gray;
     }
