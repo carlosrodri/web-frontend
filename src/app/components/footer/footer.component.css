@@ -57,7 +57,7 @@ h3 {
 .audiov {
     grid-area: production;
     margin-left: 2vw;
-    /* margin-right: 2vw; */
+    margin-right: 2vw;
 }
 
 #squares {

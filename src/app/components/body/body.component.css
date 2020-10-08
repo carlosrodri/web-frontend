@@ -36,6 +36,7 @@
     text-align: left;
     font-size: 4vh;
     grid-area: description;
+    margin-left: 2vw;
 }
 
 .emotional {
@@ -76,10 +77,10 @@
         font-size: 2rem;
     }
     .description {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .emotional {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     img {
         width: 340px;
@@ -103,6 +104,11 @@
         position: relative;
         display: inline-block;
         cursor: pointer;
+    }
+
+    .responsive_icons span{
+        width: 50px;
+        height: 50px;
     }
 }
 span {

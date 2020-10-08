@@ -1,0 +1,16 @@
+p {
+    font-family: ubuntu;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.center{
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+@media screen and (max-width: 768px){
+    p{
+        font-size: 1.2rem;
+    }
+}
