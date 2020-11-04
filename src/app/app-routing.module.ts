@@ -1,3 +1,5 @@
+import { AdminPanelComponent } from './components/admin-panel/admin-panel.component';
+import { AdminComponent } from './components/admin/admin.component';
 import { CardDetailsComponent } from './components/card-details/card-details.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { EmprenComponent } from './components/empren/empren.component';
@@ -36,6 +38,14 @@ const routes: Routes = [
   {
     path: 'blog/details/:id',
     component: CardDetailsComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
+  },
+  {
+    path: 'adminPanel',
+    component: AdminPanelComponent
   }
 ];
 

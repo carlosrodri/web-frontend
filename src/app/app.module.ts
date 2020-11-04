@@ -25,6 +25,8 @@ import { CardDetailsComponent } from './components/card-details/card-details.com
 import { FormsModule } from  '@angular/forms'
 import { HttpClientModule } from "@angular/common/http";
 import { CommentComponent } from './components/comment/comment.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { AdminPanelComponent } from './components/admin-panel/admin-panel.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { CommentComponent } from './components/comment/comment.component';
     ContactComponent,
     BlogcardComponent,
     CardDetailsComponent,
-    CommentComponent
+    CommentComponent,
+    AdminComponent,
+    AdminPanelComponent
   ],
   imports: [
     BrowserModule,

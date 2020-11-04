@@ -1,0 +1,27 @@
+<div class="container">
+
+  <div class="sidebar">
+    <ul>
+      <li><a >Dashboard</a></li>
+      <li><a >Comentarios</a></li>
+      <li><a >Suscritos</a></li>
+    </ul>
+  </div>
+
+  <div class="article">
+    <h1>Nuevo artículo</h1>
+    <input class="input" type="text" [(ngModel)]='title' placeholder="Titulo">
+    <br>
+    <textarea class="input" type="text" [(ngModel)]='description' placeholder="Descripción"></textarea>
+    <br>
+    <div class="buttons">
+      <button (click)="image()" id="img">Agregar imágenes</button>
+      <button (click)="save()">Guardar</button>
+    </div>
+  </div>
+
+  <div class="blogs">
+    <h1>Lista de artículos publicados</h1>
+  </div>
+
+</div>

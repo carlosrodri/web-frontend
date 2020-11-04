@@ -1,5 +1,6 @@
 import { VisitService } from './../../services/visit.service';
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-body',
@@ -18,9 +19,21 @@ export class BodyComponent implements OnInit {
   github: string = 'https://github.com/carlosrodri'
   facebook: string = 'https://www.facebook.com/carlosalberto.rodriguezsanchez.71/'
 
-  constructor(private visitService: VisitService) {
+  constructor(private visitService: VisitService,  private _sanitizer: DomSanitizer) {
     this.visitService.getDeviceInformation()
   }
+
+  getVideoIframe(url) {
+    var video, results;
+ 
+    if (url === null) {
+        return '';
+    }
+    results = url.match('[\\?&]v=([^&#]*)');
+    video   = (results === null) ? url : results[1];
+ 
+    return this._sanitizer.bypassSecurityTrustResourceUrl('https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v8.0' + video);   
+}
 
   ngOnInit() {
   }

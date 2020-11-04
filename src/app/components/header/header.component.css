@@ -25,6 +25,15 @@ a {
     text-decoration: none;
 }
 
+.logo{
+    background-color: #ffbf45;
+    padding: 1vw;
+    color: #fff;
+    margin: auto;
+    font-size: 40px;
+    font-family: 'Kaushan Script', cursive;
+}
+
 @media only screen and (max-width: 768px) {
     .btnMenu {
         display: flex;

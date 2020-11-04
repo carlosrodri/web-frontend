@@ -1,0 +1,10 @@
+<div class="back" (keydown.enter)="accept($event)">
+  <div class="container" >
+    <h1>Charly Admin</h1>
+    <input type="text" placeholder="Usuario" [(ngModel)]='user'>
+    <br>
+    <input type="password" placeholder="Contraseña" [(ngModel)]='password' (keydown.enter)="accept($event)">
+    <br>
+    <button (click)="accept()" type="submit" (keydown.enter)="accept($event)">Aceptar</button>
+  </div>
+</div>  
