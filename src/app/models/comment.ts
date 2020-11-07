@@ -1,12 +1,16 @@
-export class Comment{
+export class Comment {
     public _id: string
-    public idArticle: string
+    public articleId: string
     public name: string
     public mail: string
     public date: Date
-    public description: string
+    public comment: string
 
-    constructor(){
+    constructor(articleId: string, name: string, mail: string, comment: string) {
+        this.articleId = articleId;
+        this.name = name;
+        this.mail = mail;
+        this.comment = comment;
         this.date = new Date()
     }
 }

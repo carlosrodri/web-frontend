@@ -9,6 +9,21 @@ button {
     height: 5vh;
 }
 
+.comments {
+    border-bottom: solid;
+    border-color: darkgray;
+    border-width: 1px;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 2vh;
+}
+
+.comments-top {
+    border-top: solid;
+    margin: auto;
+    width: 90%;
+}
+
 *:focus {
     outline: none;
 }
@@ -35,6 +50,23 @@ textarea {
     margin-right: 15%;
     padding: 2vh;
     border-radius: 2vh;
+}
+
+h3 {
+    margin-left: 5%;
+}
+
+.comment-top {
+    display: flex;
+}
+
+.date{
+    color: darkgrey;
+    font-size: 0.8rem;
+}
+
+p {
+    margin-left: 5%;
 }
 
 @media screen and (max-width: 500px) {

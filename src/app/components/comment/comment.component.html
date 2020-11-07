@@ -1,7 +1,16 @@
+<h3 class="comments-top">Comentarios:</h3>
+<div class="comments" *ngFor="let comment of comments">
+  <div class="comment-top">
+    <h3>{{comment.name}}</h3>
+    <h3 class="date">{{comment.date | date}}</h3>
+  </div>
+  <p>{{comment.comment}}</p>
+</div>
+
 <div class="container">
-    <h2>Deja tu comentario, es gratis</h2>
-    <input type="text" placeholder="Nombre" [(ngModel)]="comment.name">
-    <input type="email" placeholder="Correo" [(ngModel)]="comment.mail">
-    <textarea type="text" placeholder="Comentario" [(ngModel)]="comment.description"></textarea>
-    <button (click)="addComment()">¡Comentar!</button>
+  <h2>Deja tu comentario, es gratis</h2>
+  <input type="text" placeholder="Nombre" [(ngModel)]="name">
+  <input type="email" placeholder="Correo" [(ngModel)]="email">
+  <textarea type="text" placeholder="Comentario" [(ngModel)]="comment"></textarea>
+  <button (click)="addComment()">¡Comentar!</button>
 </div>
