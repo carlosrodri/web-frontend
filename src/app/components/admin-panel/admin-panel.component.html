@@ -1,27 +1,41 @@
 <div class="container">
 
+  <div class="poster">
+  </div>
+
   <div class="sidebar">
     <ul>
-      <li><a >Dashboard</a></li>
-      <li><a >Comentarios</a></li>
-      <li><a >Suscritos</a></li>
+      <li><i class="fas fa-home"></i>
+        <p>Dashboard</p>
+      </li>
+      <li><i class="fas fa-comment"></i>
+        <p>Comentarios</p>
+      </li>
+      <li><i class="fas fa-user-check"></i>
+        <p>Suscritos</p>
+      </li>
     </ul>
   </div>
 
   <div class="article">
-    <h1>Nuevo artículo</h1>
+    <h3>Nuevo artículo</h3>
+    <label (click)="uploadImage()"><i class="fas fa-camera"></i>
+      <p>Imagen</p>
+    </label>
     <input class="input" type="text" [(ngModel)]='title' placeholder="Titulo">
     <br>
     <textarea class="input" type="text" [(ngModel)]='description' placeholder="Descripción"></textarea>
     <br>
     <div class="buttons">
-      <button (click)="image()" id="img">Agregar imágenes</button>
-      <button (click)="save()">Guardar</button>
+      <button (click)="publish()">Publicar <i class="fas fa-paper-plane" id="sendIcon"></i></button>
     </div>
   </div>
 
-  <div class="blogs">
-    <h1>Lista de artículos publicados</h1>
+  <div class="bloc">
+    <ul class="blogs" *ngFor="let article of articles">
+      <h3 id="articleList">{{article.title}}</h3>
+      <p>{{article.description.substring(0, 80)+'...'}}</p>
+    </ul>
   </div>
 
 </div>

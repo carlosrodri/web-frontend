@@ -6,14 +6,17 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./blogcard.component.css']
 })
 export class BlogcardComponent implements OnInit {
-  
+
   @Input() id: number
-  @Input() img: string 
+  @Input() img: string
   @Input() title: string
   @Input() description: string
   @Input() date: Date
 
-  constructor() { 
+  constructor() {
+    setTimeout(() => {
+      this.description = this.description.substr(0, 300) + '...';
+    }, 10);
   }
 
   ngOnInit() {
