@@ -159,3 +159,7 @@ ul.blogs {
 ::-webkit-scrollbar {
     display: none;
 }
+
+.image {
+    display: none;
+}

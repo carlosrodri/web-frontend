@@ -1,3 +1,5 @@
+import { AngularFireStorage, AngularFireStorageModule } from '@angular/fire/storage';
+import { environment } from './../environments/environment';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import { SubscriberService } from './services/subscriber.service';
 import { CommentService } from './services/comment.service';
@@ -27,6 +29,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { CommentComponent } from './components/comment/comment.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { AdminPanelComponent } from './components/admin-panel/admin-panel.component';
+import { AngularFireModule } from '@angular/fire';
 
 @NgModule({
   declarations: [
@@ -53,6 +56,8 @@ import { AdminPanelComponent } from './components/admin-panel/admin-panel.compon
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    AngularFireStorageModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     FormsModule
   ],
   providers: [ArticleService, EndPointsService, VisitService, CommentService, SubscriberService, DeviceDetectorService],
