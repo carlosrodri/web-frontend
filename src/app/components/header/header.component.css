@@ -26,9 +26,9 @@ a {
 }
 
 .logo{
-    background-color: #ffbf45;
+    background-color: none;
     padding: 1vw;
-    color: #fff;
+    color: #4597FF;
     margin: auto;
     font-size: 40px;
     font-family: 'Kaushan Script', cursive;
@@ -69,7 +69,7 @@ ul {
 
 header nav {
     width: 100%;
-    background: #ffbf45;
+    background: #4597FF;
 }
 
 .menu_bar {
@@ -100,7 +100,7 @@ header nav ul li span {
 
 header nav ul li a:hover {
     border-bottom: solid;
-    border-color: #ffbf45;
+    border-color: #4597FF;
 }
 
 @media only screen and (max-width: 800px) {
@@ -116,7 +116,7 @@ header nav ul li a:hover {
     }
 
     ul {
-        background-color: #ffbf45;
+        background-color: #4597FF;
     }
 
     header nav ul li {
