@@ -10,7 +10,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 export class BodyComponent implements OnInit {
 
   emotional: string = 'Si lo imaginas, se puede hacer'
-  description: string = 'Emprendedor Digital, amante de la tecnología y las Startups'
+  description: string = 'Emprendedor Digital, amante de la tecnología y las Startups. Me gusta compartir el conocimiento en mis redes sociales'
   title = 'Hola, soy Carlos Rodríguez';
 
   youtube: string = 'https://www.youtube.com/channel/UCbhqI0mAhq2-RmHfn6XmVdw?view_as=subscriber'
