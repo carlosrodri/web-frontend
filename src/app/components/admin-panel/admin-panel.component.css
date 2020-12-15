@@ -11,6 +11,11 @@
     height: 30%;
 }
 
+.uploadimage{
+    width: 15vw;
+    height: 10vh;
+}
+
 ul {
     height: 70%;
     margin-top: 5vh;

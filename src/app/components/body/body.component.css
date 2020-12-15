@@ -10,6 +10,10 @@
     " landing landing";
 }
 
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .img {
   background-image: url('/assets/icons/pattern.png');
   filter: blur(4px);
@@ -41,34 +45,29 @@
   text-align: left;
   font-size: 12vh;
   color: black;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .description {
   /* margin-left: 5%; */
   /* margin-right: 5%; */
   text-align: left;
-  font-size: 5vh;
+  font-size: 6vh;
   grid-area: description;
   margin-left: 2vw;
   color: gray;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .emotional {
   /* margin-left: 5%; */
   font-size: 4vh;
-  font-weight: bold;
   text-align: left;
-  font-family: "Ubuntu", sans-serif;
 }
 
 .video {
   grid-area: video;
-}
-
-.description {
-  grid-area: description;
-  font-family: "Ubuntu", sans-serif;
 }
 
 .landing {
@@ -94,8 +93,13 @@
     font-size: 2rem;
   }
 
+  .description_text {
+    font-family: 'Montserrat', sans-serif;
+  }
+
   .description {
     font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
   }
 
@@ -103,13 +107,14 @@
     font-size: 1.3rem;
   }
 
-  img {
-    width: 340px;
+  .yo{
+    width: 100vw;
   }
 
   .img {
-    width: 100%;
+    width: 98vw;
     height: 100%;
+    margin: 0px;
   }
 
   .icons {
