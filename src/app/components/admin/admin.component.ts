@@ -23,7 +23,7 @@ export class AdminComponent implements OnInit {
       this.password = ''
       this.router.navigate(['adminPanel']);
     } else {
-      console.log('nelson');
+     alert('Usuario o contraseña incorrectos')
     }
   }
 

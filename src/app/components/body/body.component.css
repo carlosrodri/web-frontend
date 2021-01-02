@@ -1,193 +1,227 @@
 .body {
-    margin-top: 5vh;
-    display: grid;
-    background-color: #fff;
-    text-align: center;
-    grid-template-areas:
-        "description video "
-        " landing landing";
+  margin-top: 5vh;
+  display: grid;
+  margin-left: 4%;
+  /* background-color: #fff; */
+  text-align: center;
+  z-index: 0;
+  grid-template-areas:
+    "description video "
+    " landing landing";
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.img {
+  background-image: url('/assets/icons/pattern.png');
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+  margin-left: 50%;
+  position: absolute;
 }
 
 .responsive_icons {
-    display: none;
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
+  display: none;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
+
 .responsive_icons li {
-    margin: 2vw;
-    margin-bottom: 0px;
-    width: 30px;
-    height: 30px;
+  margin: 2vw;
+  margin-bottom: 0px;
+  width: 30px;
+  height: 30px;
 }
 
 .title {
-    margin-top: 0vh;
-    /* margin-left: 5%; */
-    text-align: left;
-    font-size: 6vh;
-    color: black;
-    font-family: "Ubuntu", sans-serif;
+  margin-top: 0vh;
+  /* margin-left: 5%; */
+  text-align: left;
+  font-size: 12vh;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .description {
-    /* margin-left: 5%; */
-    /* margin-right: 5%; */
-    text-align: left;
-    font-size: 4vh;
-    font-weight: lighter;
-    grid-area: description;
-    margin-left: 2vw;
+  /* margin-left: 5%; */
+  /* margin-right: 5%; */
+  text-align: left;
+  font-size: 6vh;
+  grid-area: description;
+  margin-left: 2vw;
+  color: gray;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .emotional {
-    /* margin-left: 5%; */
-    font-size: 4vh;
-    font-weight: bold;
-    text-align: left;
-    font-family: "Ubuntu", sans-serif;
+  /* margin-left: 5%; */
+  font-size: 4vh;
+  text-align: left;
 }
 
 .video {
-    grid-area: video;
-}
-
-.description {
-    grid-area: description;
-    font-family: "Ubuntu", sans-serif;
+  grid-area: video;
 }
 
 .landing {
-    /* margin-left: 5%; */
-    grid-area: landing;
-    margin-top: 3vh;
+  /* margin-left: 5%; */
+  grid-area: landing;
+  margin-top: 3vh;
 }
 
 @media only screen and (max-width: 948px) {
-    .body {
-        grid-template-areas:
-            "landing"
-            "video"
-            "description";
-    }
-    iframe {
-        width: 90vw;
-        height: 50vh;
-    }
-    .title {
-        font-size: 2rem;
-    }
-    .description {
-        font-size: 1.2rem;
-    }
-    .emotional {
-        font-size: 1.3rem;
-    }
-    img {
-        width: 340px;
-    }
-    .icons {
-        display: none;
-        margin-top: 3vh;
-        position: absolute;
-        list-style: none;
-        text-align: center;
-    }
+  .body {
+    grid-template-areas:
+      "landing"
+      "video"
+      "description";
+  }
 
-    .responsive_icons {
-        position: absolute;
-        display: flex;
-        text-align: center;
-        align-content: center;
-    }
+  iframe {
+    width: 90vw;
+    height: 50vh;
+  }
 
-    .responsive_icons li {
-        position: relative;
-        display: inline-block;
-        cursor: pointer;
-    }
+  .title {
+    font-size: 2rem;
+  }
 
-    .responsive_icons span{
-        width: 50px;
-        height: 50px;
-    }
-}
-span {
-    position: relative;
-    /* text-align: center; */
-}
+  .description_text {
+    font-family: 'Montserrat', sans-serif;
+  }
 
-.icons {
+  .description {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+  }
+
+  .emotional {
+    font-size: 1.3rem;
+  }
+
+  .yo{
+    width: 100vw;
+  }
+
+  .img {
+    width: 98vw;
+    height: 100%;
+    margin: 0px;
+  }
+
+  .icons {
+    display: none;
     margin-top: 3vh;
     position: absolute;
     list-style: none;
     text-align: center;
-    left: 5vh;
+  }
+
+  .responsive_icons {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    align-content: center;
+  }
+
+  .responsive_icons li {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .responsive_icons span {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+span {
+  position: relative;
+  /* text-align: center; */
+}
+
+.icons {
+  margin-top: 3vh;
+  position: absolute;
+  list-style: none;
+  text-align: center;
+  left: 5vh;
 }
 
 .fab {
-    margin-top: 1vh;
+  margin-top: 1vh;
 }
 
 .icons li {
-    position: relative;
-    width: 12vh;
-    height: 12vh;
-    display: inline-block;
-    cursor: pointer;
-    margin: 0 10px;
+  position: relative;
+  width: 12vh;
+  height: 12vh;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 10px;
 }
+
 ul.icons {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
+
 .icons li:before {
-    position: absolute;
-    top: 0vh;
-    left: 0%;
-    content: "";
-    height: 12vh;
-    width: 12vh;
-    border-radius: 10%;
-    z-index: 0;
-    transition: all 0.3s ease-in;
-    -webkit-box-shadow: 0px 1px 16px 11px rgba(230, 230, 230, 1);
-    -moz-box-shadow: 0px 1px 16px 11px rgba(230, 230, 230, 1);
-    box-shadow: 0px 1px 16px 11px rgba(230, 230, 230, 1);
+  position: absolute;
+  top: 0vh;
+  left: 0%;
+  content: "";
+  height: 12vh;
+  width: 12vh;
+  border-radius: 10%;
+  z-index: 0;
+  transition: all 0.3s ease-in;
+  -webkit-box-shadow: 0px 1px 16px 11px rgba(230, 230, 230, 1);
+  -moz-box-shadow: 0px 1px 16px 11px rgba(230, 230, 230, 1);
+  box-shadow: 0px 1px 16px 11px rgba(230, 230, 230, 1);
 }
 
 .icons li:hover:before {
-    transform: rotate(360deg);
-    border-radius: 100%;
+  transform: rotate(360deg);
+  border-radius: 100%;
 }
 
 .icons li a span {
-    line-height: 70px;
-    font-size: 8vh;
-    transition: all 0.3s ease-out;
-    z-index: 1;
+  line-height: 70px;
+  font-size: 8vh;
+  transition: all 0.3s ease-out;
+  z-index: 1;
 }
 
 #fb {
-    color: #3b5998;
+  color: #3b5998;
 }
 
 #ig {
-    color: #ae31d9;
+  color: #ae31d9;
 }
 
 #tw {
-    color: #00acee;
+  color: #00acee;
 }
 
 #gh {
-    color: #24292e;
+  color: #24292e;
 }
 
 #yt {
-    color: red;
+  color: red;
 }
 
 .icons li:hover a span {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }

@@ -5,10 +5,10 @@
 
   <div class="sidebar">
     <ul>
-      <li><i class="fas fa-home"></i>
+      <li (click)="switchComments('dashboard')"><i class="fas fa-home"></i>
         <p>Dashboard</p>
       </li>
-      <li><i class="fas fa-comment"></i>
+      <li (click)="switchComments('comments')"><i class="fas fa-comment"></i>
         <p>Comentarios</p>
       </li>
       <li><i class="fas fa-user-check"></i>
@@ -17,9 +17,10 @@
     </ul>
   </div>
 
-  <div class="article">
+  <div class="article" id="article">
     <h3>Nuevo artículo</h3>
     <label><i class="fas fa-camera"></i>
+      <img src={{img}} alt="" class="uploadImage">
       <p>Imagen</p>
       <input class="image" type="file" accept=".png, .jpg, .jpeg" (change)='uploadImage($event)'>
     </label>
@@ -30,6 +31,13 @@
     <div class="buttons">
       <button (click)="publish()">Publicar <i class="fas fa-paper-plane" id="sendIcon"></i></button>
     </div>
+  </div>
+
+  <div class="comments" hidden *ngFor="let comment of commentsList" id="comments">
+    <label>
+      <h3>{{comment.name}}</h3>
+      <p>{{comment.comment}}</p>
+    </label>
   </div>
 
   <div class="bloc">
