@@ -35,6 +35,7 @@
     /* margin-right: 5%; */
     text-align: left;
     font-size: 4vh;
+    font-weight: lighter;
     grid-area: description;
     margin-left: 2vw;
 }
