@@ -23,18 +23,6 @@ export class BodyComponent implements OnInit {
     this.visitService.getDeviceInformation()
   }
 
-  getVideoIframe(url) {
-    var video, results;
- 
-    if (url === null) {
-        return '';
-    }
-    results = url.match('[\\?&]v=([^&#]*)');
-    video   = (results === null) ? url : results[1];
- 
-    return this._sanitizer.bypassSecurityTrustResourceUrl('https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v8.0' + video);   
-}
-
   ngOnInit() {
   }
 

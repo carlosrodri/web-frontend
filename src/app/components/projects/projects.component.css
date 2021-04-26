@@ -1,21 +1,28 @@
 p {
-    font-family: ubuntu;
-    font-weight: lighter;
-    font-size: 30px;
+    font-size: 20px;
 }
 
-.center{
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+a:hover{
+    background-color: lightgrey;
+    transform: matrix();
+}
+
+.center {
     margin-left: 15%;
     margin-right: 15%;
 }
 
-@media screen and (max-width: 768px){
-    p{
-        font-size: 1.2rem;
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 20px;
     }
-}
 
-a{
-    text-decoration: none;
-    color: black;
+    .center {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
 }

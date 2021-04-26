@@ -1,45 +1,44 @@
-p{
-    font-family: ubuntu;
-    font-weight: lighter;
-    font-size: 30px;
+*{
+    font-family: "Lato", sans-serif;
 }
 
-.container{
+p {
+    font-size: 20px;
+}
+
+.container {
     margin-left: 2vw;
     margin-right: 2vw;
     display: flex;
 }
 
-h1{
-    font-family: ubuntu;
+h1 {
     margin-left: 2vw;
 }
 
-@media screen and (max-width: 768px){
-    p{
-        font-family: ubuntu;
+@media screen and (max-width: 768px) {
+    p {
         font-weight: lighter;
         font-size: 1.2rem;
         width: 100%;
     }
-    
-    .container{
+
+    .container {
         margin-left: 2vw;
         margin-right: 2vw;
         display: block;
         text-justify: auto;
     }
 
-    h1{
+    h1 {
         font-size: 1.6rem;
     }
-    
-    .img{
+
+    .img {
         width: 100%;
         text-align: center;
     }
-    img{
+    img {
         width: 320px;
     }
-
 }

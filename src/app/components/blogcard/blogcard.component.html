@@ -1,8 +1,16 @@
-<div class="container" [routerLink]="['details', id]">
-    <img src="{{img}}" alt="img">
-    <div class="text">
-        <h1 class="title">{{title}}</h1>
-        <p>{{description}}</p>
+<div class="container" [routerLink]="['details', blog._id]">
+  <div class="text">
+    <h1 class="title">{{blog.tags[0].kindTag == 'img'? blog.tags[1].content: blog.tags[0].content}}</h1>
+    <p>{{blog.tags[blog.tags.length-1].content.slice(0, 200)}}...</p>
+  </div>
+  <div class="footer">
+    <div class="autor">
+      <img src="/assets/yo.png" alt="" srcset="">
+      <p>Carlos Rodríguez</p>
     </div>
-    <h2>{{date | date}}</h2>
+    <div class="date">
+      <i class="bi bi-clock"></i>
+      <p>{{blog.date | date}}</p>
+    </div>
+  </div>
 </div>

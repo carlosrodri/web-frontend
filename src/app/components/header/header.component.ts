@@ -17,6 +17,9 @@ export class HeaderComponent implements OnInit {
 
     var contador = 1;
 
+    /**
+     * show left-rigth sidebar, i dont wanted implement jquey :(
+     */
     function main() {
       $('.menu_bar').click(function () {
         // $('nav').toggle(); 

@@ -1,7 +1,8 @@
-<div class="container" id="container">
-  <h3>{{currentBlog.date | date}}</h3>
-  <h1>{{currentBlog.title}}</h1>
-  <!-- <p>{{description}}</p> -->
-  <!-- <h4>{{autor}}</h4> -->
+<div class="container">
+  <div class="content" id="content">
+    <h3>{{currentBlog.date | date}}</h3>
+    <!-- <p>{{description}}</p> -->
+    <!-- <h4>{{autor}}</h4> -->
+  </div>
 </div>
-<app-comment [idArticle]=currentBlog._id></app-comment>
+<app-comment *ngIf="currentBlog" [idArticle]=currentBlog._id></app-comment>

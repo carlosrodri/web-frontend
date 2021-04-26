@@ -1,3 +1,7 @@
+*{
+    font-family: "Lato", sans-serif;
+}
+
 .containers {
     display: grid;
     grid-template-areas: "desarrollo empren marketing production";
@@ -17,7 +21,6 @@ h2{
     margin-left: 3vw;
     margin-bottom: 8vh;
     padding-top: 5vh;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 img{
@@ -27,7 +30,6 @@ img{
 
 p {
     padding-left: 3vh;
-    font-family: 'Ubuntu', sans-serif;
     padding-right: 3vw;
     margin-top: 3vh;
     font-weight: normal;
@@ -35,7 +37,6 @@ p {
 
 h3 {
     padding-left: 3vw;
-    font-family: 'Ubuntu', sans-serif;
     margin-top: 2vh;
 }
 

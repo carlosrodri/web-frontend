@@ -16,9 +16,11 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
+  /**
+   * Verify your password and username to login into admin BLOG panel
+   */
   accept() {
     if (this.user === 'charly' && this.password === 'abc.521063') {
-      console.log('entra ome');
       this.user = ''
       this.password = ''
       this.router.navigate(['adminPanel']);

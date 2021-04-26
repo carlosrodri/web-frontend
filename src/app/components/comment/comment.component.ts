@@ -26,6 +26,9 @@ export class CommentComponent implements OnInit {
   ngOnInit() {
   }
 
+  /**
+   * Get all comments form backend
+   */
   getComments() {
     this.commentService.getAllCommentsByArticle(this.idArticle).subscribe(comments => {
       if (comments['status'] == 'ok') {
@@ -36,6 +39,9 @@ export class CommentComponent implements OnInit {
     });
   }
 
+  /**
+   * Add new comment to DB
+   */
   addComment() {
     if (this.comment === undefined || this.email === undefined || this.name === undefined) {
       this.showMessage('Todos los campos son requeridos', 'warning')

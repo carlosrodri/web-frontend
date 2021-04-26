@@ -1,3 +1,4 @@
+import { Article } from './../../models/article';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -7,19 +8,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class BlogcardComponent implements OnInit {
 
-  @Input() id: number
-  @Input() img: string
-  @Input() title: string
-  @Input() description: string
-  @Input() date: Date
+  @Input() blog: Article;
 
   constructor() {
-    setTimeout(() => {
-      this.description = this.description.substr(0, 300) + '...';
-    }, 10);
   }
 
   ngOnInit() {
+
   }
 
 }

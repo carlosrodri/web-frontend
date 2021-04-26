@@ -1,3 +1,7 @@
+*{
+    font-family: "Lato", sans-serif;
+}
+
 .container {
     text-align: center;
     margin-top: 0;
@@ -9,7 +13,6 @@ h1 {
     color: #000;
     padding: 2vh;
     font-size: 7vh;
-    font-family: "PT Sans", sans-serif;
     grid-area: title;
 }
 
@@ -17,8 +20,13 @@ img {
     height: 30vh;
 }
 
+.content {
+    text-align: justify;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
 p {
-    font-family: "Ubuntu", sans-serif;
     font-weight: lighter;
     font-size: 1.1rem;
     margin-left: 20%;
@@ -45,8 +53,13 @@ h3 {
         width: 100%;
     }
 
-    h3{
+    h3 {
         font-size: 1rem;
+    }
+
+    .content{
+        padding-left: 3%;
+        padding-right: 3%;
     }
 }
 

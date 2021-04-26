@@ -1,3 +1,7 @@
+*{
+    font-family: "Lato", sans-serif;
+}
+
 header {
     width: 100%;
 }
@@ -7,7 +11,6 @@ img {
 }
 .title {
     grid-area: title;
-    font-family: "Ubuntu", sans-serif;
 }
 .menu {
     grid-area: menu;
@@ -17,7 +20,6 @@ img {
 }
 
 a {
-    font-family: "Ubuntu", sans-serif;
     display: inline-block;
     /* margin: 2vh; */
     font-weight: bolder;
@@ -31,7 +33,6 @@ a {
     color: #4597FF;
     margin: auto;
     font-size: 40px;
-    font-family: 'Kaushan Script', cursive;
 }
 
 @media only screen and (max-width: 768px) {

@@ -1,12 +1,7 @@
-export class Article{
-    public _id: string
-    public title: string
-    public description: string
-    public imgs: string[]
-    public date: Date
-
-    constructor(title: string, description: string){
-        this.title = title;
-        this.description = description;
-    }
+import { Tag } from './tag';
+export class Article {
+    _id?: string;
+    tags: Tag[];
+    comments?: Comment[];
+    date: Date;
 }

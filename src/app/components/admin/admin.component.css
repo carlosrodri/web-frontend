@@ -1,3 +1,6 @@
+*{
+    font-family: "Lato", sans-serif;
+}
 .container{
     align-content: center;
     text-align: center;
@@ -16,14 +19,11 @@
 input{
     margin-bottom: 3vh;
     height: 6vh;
-    font-family: ubuntu;
     border-radius: 1vh;
 }
 
 h1{
     padding-top: 2vh;
-    font-family: ubuntu;
-
 }
 
 .back{
@@ -42,7 +42,7 @@ button{
     margin-bottom: 3vh;
     cursor: pointer;
     background-color: orange;
-    font-family: ubuntu;
+    
     border: none;
     font-weight: bolder;
     font-size: medium;

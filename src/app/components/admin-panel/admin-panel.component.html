@@ -1,8 +1,6 @@
 <div class="container">
 
-  <div class="poster">
-  </div>
-
+  <!-- SideBar goes here -->
   <div class="sidebar">
     <ul>
       <li (click)="switchComments('dashboard')"><i class="fas fa-home"></i>
@@ -17,34 +15,45 @@
     </ul>
   </div>
 
+  <!-- Article div goes here -->
   <div class="article" id="article">
-    <h3>Nuevo artículo</h3>
-    <label><i class="fas fa-camera"></i>
-      <img src={{img}} alt="" class="uploadImage">
-      <p>Imagen</p>
-      <input class="image" type="file" accept=".png, .jpg, .jpeg" (change)='uploadImage($event)'>
-    </label>
-    <input class="input" type="text" [(ngModel)]='title' placeholder="Titulo">
-    <br>
-    <textarea class="input" type="text" [(ngModel)]='description' placeholder="Descripción"></textarea>
-    <br>
-    <div class="buttons">
-      <button (click)="publish()">Publicar <i class="fas fa-paper-plane" id="sendIcon"></i></button>
-    </div>
+    <form (ngSubmit)="publish()" [formGroup]='form'>
+      <h3>Nuevo artículo</h3>
+      <!-- <label><i class="fas fa-camera"></i>
+        <img src={{img}} alt="" class="uploadImage">
+        <p>Imagen</p>
+        <input class="image" type="file" accept=".png, .jpg, .jpeg" (change)='uploadImage($event)'>
+      </label> -->
+      <div class="tag-options">
+        <i class="bi bi-type-h1" (click)="addTagContent('h1')"></i>
+        <i class="bi bi-type-h2" (click)="addTagContent('h2')"></i>
+        <i class="bi bi-type-h3" (click)="addTagContent('h3')"></i>
+        <i class="bi bi-arrow-return-right" (click)="addTagContent('br')"></i>
+        <i class="bi bi-textarea-t" (click)="addTagContent('p')"></i>
+        <i class="bi bi-file-image" (click)="addTagContent('img')"></i>
+        <!-- <i class="bi bi-camera-video" (click)="addTagContent('video')"></i> -->
+      </div>
+      <textarea class="input" type="text" formControlName='content' placeholder="Contenido"></textarea>
+      <br>
+      <div id="preview"></div>
+      <br>
+      <div class="buttons">
+        <button type="submit">Publicar <i class="fas fa-paper-plane" id="sendIcon"></i></button>
+      </div>
+    </form>
   </div>
 
-  <div class="comments" hidden *ngFor="let comment of commentsList" id="comments">
+  <!-- <div class="comments" hidden *ngFor="let comment of commentsList" id="comments">
     <label>
       <h3>{{comment.name}}</h3>
       <p>{{comment.comment}}</p>
     </label>
-  </div>
+  </div> -->
 
-  <div class="bloc">
+  <!-- <div class="bloc">
     <ul class="blogs" *ngFor="let article of articles">
       <h3 id="articleList">{{article.title}}</h3>
-      <p>{{article.description.substring(0, 80)+'...'}}</p>
     </ul>
-  </div>
+  </div> -->
 
 </div>

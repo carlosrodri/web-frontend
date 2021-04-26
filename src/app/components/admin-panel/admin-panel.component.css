@@ -1,3 +1,6 @@
+*{
+    font-family: "Lato", sans-serif;
+}
 .container {
     text-align: center;
     display: flex;
@@ -11,7 +14,7 @@
     height: 30%;
 }
 
-.uploadimage{
+.uploadimage {
     width: 15vw;
     height: 10vh;
 }
@@ -31,19 +34,6 @@ ul {
     margin-right: 0.5vh;
 }
 
-.article {
-    padding: 3vh;
-    width: 40%;
-    border-radius: 0.8vh;
-    margin-left: 10vh;
-    z-index: 1;
-    background-color: #fff;
-    margin-top: 8%;
-    box-shadow: -1px 7px 12px -5px rgba(95, 39, 205, 0.45);
-    -webkit-box-shadow: -1px 7px 12px -5px rgba(95, 39, 205, 0.45);
-    -moz-box-shadow: -1px 7px 12px -5px rgba(95, 39, 205, 0.45);
-}
-
 input {
     margin-bottom: 2vh;
 }
@@ -60,9 +50,13 @@ a {
     cursor: pointer;
 }
 
+li {
+    border-left: solid;
+    border-color: #fff;
+}
+
 li:hover {
-    border-bottom: solid;
-    border-color: #ffbf45;
+    border-color: #6247d1;
 }
 
 h3 {
@@ -72,8 +66,8 @@ h3 {
 
 textarea {
     margin-bottom: 2vh;
-    height: 35vh;
-    width: 40vw;
+    width: 100%;
+    height: 20%;
     border-radius: 0.5vh;
 }
 
@@ -87,18 +81,16 @@ input {
 }
 
 .sidebar {
-    margin-left: 4%;
-    height: 70%;
+    width: 10%;
+}
+
+.article {
+    padding: 3vh;
+    width: 90%;
     border-radius: 0.8vh;
-    padding-right: 3vw;
-    margin-top: 2%;
-    padding-bottom: 27%;
-    width: 20%;
-    background-color: #fff;
+    margin-left: 10vh;
     z-index: 1;
-    box-shadow: -1px 7px 12px -5px rgba(95, 39, 205, 0.45);
-    -webkit-box-shadow: -1px 7px 12px -5px rgba(95, 39, 205, 0.45);
-    -moz-box-shadow: -1px 7px 12px -5px rgba(95, 39, 205, 0.45);
+    background-color: #f0f5f8;
 }
 
 li {
@@ -129,7 +121,7 @@ button {
     cursor: pointer;
     color: #fff;
     font-weight: bolder;
-    background-color: #5f27cd;
+    background-color: #6247d1;
 }
 
 #img {
@@ -167,4 +159,30 @@ ul.blogs {
 
 .image {
     display: none;
+}
+
+.tag-options {
+    display: flex;
+    margin: 1%;
+}
+
+i {
+    cursor: pointer;
+}
+
+.bi {
+    padding: 0.2em;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+p {
+    text-align: justify;
+}
+
+#preview {
+    background-color: #fff;
+    text-align: justify;
 }

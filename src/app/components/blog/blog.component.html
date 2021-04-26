@@ -1,6 +1,13 @@
 <div class="container">
-  <h1>Artículos</h1>
-  <label *ngFor="let item of blogList">
-    <app-blogcard [id]=item._id [title]=item.title [img]=item.imgs[0] [description]=item.description.substring(0,100) [date]=item.date></app-blogcard>
-  </label>
+  <div class="image">
+    <img src="/assets/portada.png" alt="">
+    <h1>Artículos</h1>
+  </div>
+
+  <div class="blog-card">
+    <label *ngFor="let blog of blogList">
+      <app-blogcard [blog]=blog></app-blogcard>
+    </label>
+  </div>
+
 </div>

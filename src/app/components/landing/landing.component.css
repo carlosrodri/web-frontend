@@ -1,3 +1,7 @@
+*{
+    font-family: "Lato", sans-serif;
+}
+
 form {
     border: solid;
     border-color: gray;
@@ -20,12 +24,10 @@ small{
 .title {
     font-size: 4vh;
     grid-area: title;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 .name {
     grid-area: name;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 input:focus {
@@ -37,7 +39,6 @@ input{
     margin: 2vh;
     font-weight: normal;
     color: gray;
-    font-family: 'Ubuntu', sans-serif;
     font-size: 3vh;
     border-radius: 2vh;
 
@@ -47,7 +48,6 @@ input{
     grid-area: mail;
 }
 .button {
-    font-family: 'Ubuntu', sans-serif;
     background-color: orange;
     height: 10vh;
     font-size: 1.5rem;

@@ -24,7 +24,7 @@ import { EmprenComponent } from './components/empren/empren.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { BlogcardComponent } from './components/blogcard/blogcard.component';
 import { CardDetailsComponent } from './components/card-details/card-details.component';
-import { FormsModule } from  '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from  '@angular/forms'
 import { HttpClientModule } from "@angular/common/http";
 import { CommentComponent } from './components/comment/comment.component';
 import { AdminComponent } from './components/admin/admin.component';
@@ -58,6 +58,7 @@ import { AngularFireModule } from '@angular/fire';
     HttpClientModule,
     AngularFireStorageModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
+    ReactiveFormsModule,
     FormsModule
   ],
   providers: [ArticleService, EndPointsService, VisitService, CommentService, SubscriberService, DeviceDetectorService],

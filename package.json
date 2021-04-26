@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
     "@types/jquery": "^3.5.1",
+    "bootstrap-icons": "^1.4.1",
     "firebase": "^8.0.1",
     "jquery": "^3.5.1",
     "ngx-device-detector": "^2.0.0",
