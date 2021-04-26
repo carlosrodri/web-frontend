@@ -20,7 +20,7 @@ export class AdminComponent implements OnInit {
    * Verify your password and username to login into admin BLOG panel
    */
   accept() {
-    if (this.user === 'charly' && this.password === 'abc.521063') {
+    if (this.user === 'myUser' && this.password === 'mypass') {
       this.user = ''
       this.password = ''
       this.router.navigate(['adminPanel']);
